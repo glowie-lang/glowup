@@ -39,78 +39,117 @@ padding:35px 50px;
 }
 
 header{
+    margin-bottom:70px;
+}
 
-display:flex;
+.navbar{
 
-justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-align-items:center;
+    background:#fbf8f2;
 
-margin-bottom:70px;
+    border:1px solid rgba(0,0,0,.15);
+
+    border-radius:999px;
+
+    padding:12px 25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
 
 }
 
 .logo{
+
     display:flex;
     align-items:center;
     gap:15px;
+
 }
 
 .logo img{
-    height:80px;
+
+    height:75px;
+    width:auto;
+
 }
 
-.logo h2{
+.logo-text h2{
+
     font-family:'Cormorant Garamond', serif;
-    font-size:30px;
-    margin:0;
+
     color:#2E8B57;
+
+    margin:0;
+
+    font-size:30px;
+
 }
 
-.logo span{
-    display:block;
+.logo-text span{
+
     font-size:13px;
-    color:#555;
+
+    color:#666;
+
     letter-spacing:1px;
+
 }
 
 nav{
 
-display:flex;
+    display:flex;
 
-gap:35px;
+    gap:35px;
 
 }
 
 nav a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#222;
+    color:#222;
 
-font-size:15px;
+    font-size:15px;
 
-transition:.3s;
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#2E8B57;
+
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#2E8B57;
+    color:#2E8B57;
 
 }
 
-.hero{
+nav a:hover::after{
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding-bottom:40px;
+    width:100%;
 
 }
 
@@ -211,6 +250,24 @@ header{
 flex-direction:column;
 
 gap:20px;
+
+    .navbar{
+
+    flex-direction:column;
+
+    border-radius:30px;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
 
 }
 
