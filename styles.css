@@ -50,10 +50,28 @@ margin-bottom:70px;
 
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
 .logo img{
     height:80px;
-    width:auto;
+}
+
+.logo h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:30px;
+    margin:0;
+    color:#2E8B57;
+}
+
+.logo span{
     display:block;
+    font-size:13px;
+    color:#555;
+    letter-spacing:1px;
 }
 
 nav{
